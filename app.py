@@ -2,7 +2,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def index( ):
+def index():
     titolo="Pagina iniziale"
     testo="Ciao mondo!"
     bottone="Più info"
@@ -13,7 +13,7 @@ def index( ):
 
 
 @app.route('/info')
-def info( ):
+def info():
     titolo="Pagina info"
     testo="Informazioni"
     return render_template("info.html", 
