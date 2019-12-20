@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}{{ titolo }}{% endblock %}
- {% block navbar %}
+{% block title %} {{ titolo }} {% endblock %}
+{% block navbar %}
       <h3 class="masthead-brand">App Corso</h3>
       <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link " href="/">Home</a>
-        <a class="nav-link active" href="/info">Info</a>
+      <a class="nav-link " href="/">Home</a>
+      <a class="nav-link active" href="/info">Info</a>
       </nav>
- {% endblock %}
+{% endblock %}
 
- {%  block content %}
+{%  block content %}
     <h1 class="cover-heading">{{ titolo }}</h1>
-    <p class="lead">{{ testo }}.</p>
+    <p class="lead">{{ testo }}</p>
 {% endblock % }
